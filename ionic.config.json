@@ -1,0 +1,7 @@
+{
+  "name": "uas_s3A",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

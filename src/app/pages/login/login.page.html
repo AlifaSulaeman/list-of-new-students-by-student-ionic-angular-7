@@ -1,0 +1,40 @@
+<ion-content class="ion-padding" class="background">
+  <ion-grid>
+    <ion-row justify-content-center align-items-center>
+      <ion-col size="12" size-md="6">
+        <div>
+          <ion-card class="custom-card">
+            <ion-card-header>
+              <ion-card-title style="color: white;">Log in</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-item class="custom-input" style="background-color: white;">
+                <ion-label position="floating">NPM</ion-label>
+                <ion-input type="text" placeholder="Student Identification Number" style="color: white;"  [(ngModel)]="npm" required></ion-input>
+                <ion-icon name="person" slot="end"></ion-icon>
+              </ion-item>
+
+              <ion-item class="custom-input">
+                <ion-label position="floating">Email</ion-label>
+                <ion-input type="{{ showPassword ? 'text' : 'password' }}" placeholder="Email" [(ngModel)]="email" required></ion-input>
+                <ion-icon name="lock-closed" slot="end"></ion-icon>
+              </ion-item>
+
+              <div class="remember-forgot">
+                <ion-checkbox [(ngModel)]="showPassword" slot="start"></ion-checkbox>
+                <ion-label style="color: white;">Show Password</ion-label>
+                <a href="#">Forget Password</a>
+              </div>
+
+              <ion-button expand="full" class="btn" (click)="login()">Log in</ion-button>
+
+              <div class="register-link">
+                <p style="color: white;">Dont't have account? <a href="#">Register</a></p>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

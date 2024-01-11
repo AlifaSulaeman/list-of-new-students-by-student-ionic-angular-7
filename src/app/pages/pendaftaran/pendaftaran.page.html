@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title style="text-align: center; color: white;">
+      New student registration
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+
+    <ion-item>
+      <ion-label position="floating" color="primary">Full Name</ion-label>
+      <ion-input [(ngModel)]="nama" type="text" style="border-bottom: 2px solid var(--ion-color-primary);"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating" color="primary">Phone Number</ion-label>
+      <ion-input [(ngModel)]="no_hp" type="tel" placeholder="08123" style="border-bottom: 2px solid var(--ion-color-primary);"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Gender</ion-label>
+      <ion-select [(ngModel)]="jenis_kelamin" interface="popover" size="small" color="primary">
+        <ion-select-option value="Male">Male</ion-select-option>
+        <ion-select-option value="Female">Female</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating" color="primary">Email</ion-label>
+      <ion-input [(ngModel)]="email" type="email" placeholder="admin@gmail.com" style="border-bottom: 2px solid var(--ion-color-primary);"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating" color="primary">Previous School</ion-label>
+      <ion-input [(ngModel)]="asal_sekolah" type="text" style="border-bottom: 2px solid var(--ion-color-primary);"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Academic Program</ion-label>
+      <ion-select [(ngModel)]="program_studi" interface="popover" size="small" color="primary">
+        <ion-select-option value="Information Systems">Information Systems</ion-select-option>
+        <ion-select-option value="Informatics Engineering">Informatics Engineering</ion-select-option>
+        <ion-select-option value="Information Technology">Information Technology</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Educational Level</ion-label>
+      <ion-select [(ngModel)]="jenjang" interface="popover" size="small" color="primary">
+        <ion-select-option value="Diploma (D3)">Diploma (D3)</ion-select-option>
+        <ion-select-option value="Bachelor's Degree">Bachelor's Degree (S1)</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Class</ion-label>
+      <ion-select [(ngModel)]="kelas" interface="popover" size="small" color="primary">
+        <ion-select-option value="A">A</ion-select-option>
+        <ion-select-option value="B">B</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Campus Information</ion-label>
+      <ion-select [(ngModel)]="info_kampus" interface="popover" size="small" color="primary">
+        <ion-select-option value="Student">Student</ion-select-option>
+        <ion-select-option value="Social Media">Social Media</ion-select-option>
+        <ion-select-option value="Friend">Friend</ion-select-option>
+        <ion-select-option value="Other">Other</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-button expand="full" (click)="addData()" color="primary" style="margin-top: 20px;">Submit</ion-button>
+</ion-content>

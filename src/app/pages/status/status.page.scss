@@ -1,0 +1,48 @@
+.header {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .main {
+	width: 100%;
+	height: auto;
+	display: grid;
+	place-items: center;
+	background-color: rgb(245, 245, 245);
+	padding: 50px 0;
+}
+.main .head {
+	font-size: 29px;
+	color: rgba(91, 14, 216, 0.767);
+	position: relative;
+	margin-bottom: 100px;
+	font-weight: 500;
+}
+.main .head::after {
+	content: " ";
+	position: absolute;
+	width: 50%;
+	height: 3px;
+	left: 50%;
+	bottom: -5px;
+	transform: translateX(-50%);
+	background-image: linear-gradient(to right,  #045de9, #09c6f9);
+}
+ .isi{
+	background-color: white;
+	color: black;
+  } 
+  ion-content{
+	--background:linear-gradient( to right, #045de9, #09c6f9);
+  }
+  ion-searchbar{
+	--background:linear-gradient( to right, #045de9, #09c6f9);
+  }
+  .status{
+	border-radius: 10px;
+	background-image: linear-gradient(to right,  #e90404, #f93109);
+	padding: 5px;
+	color : white;
+	position: center;
+}

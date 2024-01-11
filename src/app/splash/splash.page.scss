@@ -1,0 +1,18 @@
+ion-content{
+    --background : white;
+}
+@-webkit-keyframes slide-in-fwd-center{0%{-webkit-transform:translateZ(-1400px);transform:translateZ(-1400px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes slide-in-fwd-center{0%{-webkit-transform:translateZ(-1400px);transform:translateZ(-1400px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
+.container{
+    -webkit-animation:slide-in-fwd-center 1s cubic-bezier(.25,.46,.45,.94);animation:slide-in-fwd-center 1s cubic-bezier(.25,.46,.45,.94);
+    img{
+        height:  300px;
+        margin-top: 18%;
+    }
+}
+.Wellcome{
+    text-align: center;
+    color: navy;
+    font-size: 35px;
+    font-family: "Times New Roman", serif;
+    margin-top: 30%;
+}
